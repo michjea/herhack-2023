@@ -5,6 +5,8 @@
 
 import pandas as pd
 
+# This is still mostly pseudocode, for demonstration.
+
 catalogue = pd.DataFrame  #todo: JsonImporter.importData()
 
 def print_hi(name):
@@ -13,13 +15,6 @@ def print_hi(name):
 
 def getProductById(productnumber):
     return catalogue.filter(id=productnumber)
-
-def getSustainability(product):
-    return { product.m_check2_packaging,
-     product.dimension_circularity.material_health,
-     product.dimension_circularity.product_circularity,
-     product.m_check_fish }
-
 
 
 # Press the green button in the gutter to run the script.
